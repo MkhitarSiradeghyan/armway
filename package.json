@@ -1,4 +1,16 @@
 {
+  "name": "armway",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://mkhitarsiradeghyan.github.io/armway",
+  "scripts": {
+    "dev": "next dev -H 192.168.0.2",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
@@ -6,7 +18,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^0.27.2",
-    "gh-pages": "^4.0.0",
     "next": "12.2.2",
     "next-translate": "^1.5.0",
     "react": "18.2.0",
