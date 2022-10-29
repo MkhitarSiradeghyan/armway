@@ -2,8 +2,8 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Carousel from '../components/Carousel';
-import Gallery from './../components/Gallery';
-import Title from './../components/Title';
+import Gallery from '../components/Gallery';
+import Title from '../components/Title';
 
 
 const Index = () => {
