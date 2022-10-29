@@ -1,0 +1,22 @@
+@use 'mixins' as m
+    
+.register
+    position: relative
+    .form
+        +m.flex(center, stretch, column)
+        gap: 20px 
+        .input
+            border: 1px solid #0aa
+            padding: 10px 15px
+        .check
+            font-size: 12px
+            text-align: justify
+        .submit
+            align-self: center
+            border: none
+            background: #0aa
+            width: 200px
+            height: 50px
+            color: #fff
+            font-size: 18px
+            cursor: pointer

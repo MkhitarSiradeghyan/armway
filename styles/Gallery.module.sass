@@ -1,0 +1,11 @@
+@use 'mixins' as m
+
+.gallery
+    width: 100%
+    .grid
+        +m.grid(repeat(3, 1fr), auto, 30px)
+        width: 100%
+        max-width: 1600px
+        margin: 0 auto
+        margin-bottom: 140px
+        padding: 50px 0

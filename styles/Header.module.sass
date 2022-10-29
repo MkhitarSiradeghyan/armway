@@ -1,0 +1,38 @@
+@use 'mixins' as m
+
+.header
+    position: sticky
+    display: block
+    top: 0
+    width: 100%
+    height: 60px
+    z-index: 9999
+    background: #222
+    // background: linear-gradient(#000000 0%, #00000000 100%)
+    .header_wrap
+        +m.flex(space-between, stretch)
+
+        .logo
+            height: 60px
+            position: relative
+            +m.flex(center, center)
+        .navbar
+            +m.flex(center, stretch)
+            .menu
+                +m.flex(space-between, center)
+                padding: 0
+                margin: 0
+                .menu_item
+                    list-style-type: none
+                    height: 100%
+                    padding: 0 20px
+                    color: #fff
+                    letter-spacing: 1px
+                    +m.flex(space-between, center)
+                    .lang
+                        +m.flex(space-between, center)
+                        gap: 20px
+                        padding: 0
+                        .lang_item
+                            list-style-type: none
+                            cursor: pointer

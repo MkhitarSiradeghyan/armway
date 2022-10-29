@@ -1,0 +1,43 @@
+.img
+    position: relative
+    overflow: hidden
+    aspect-ratio: 16 / 9
+    .input
+        display: none
+    img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 100%
+    .inputHover
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #0005
+        opacity: 0
+        transition: 0.3s
+        cursor: pointer
+        color: #ccc
+        z-index: 99
+        font-size: 24px
+        &:hover
+            opacity: 1
+            transition: 0.3s
+    .close
+        position: absolute
+        top: 0
+        right: 0
+        width: 1em
+        height: 1em
+        color: #fff
+        background: #c00
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 99
+        cursor: pointer

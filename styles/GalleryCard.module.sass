@@ -1,0 +1,13 @@
+@use 'mixins' as m
+
+.gallery_card
+    width: 100%
+    aspect-ratio: 1 / 1
+    position: relative
+    overflow: hidden
+    img
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        height: 100%
